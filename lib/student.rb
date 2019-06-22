@@ -46,7 +46,7 @@ class Student
   
   def self.update
     sql = <<-SQL
-      UPDATE 
+      UPDATE students 
       SQL
   end
 
