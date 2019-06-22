@@ -6,7 +6,6 @@ class Student
   #  with DB[:conn]
   
   attr_accessor :grade, :name, :id
-  #attr_reader :id
 
   def initialize(name, grade, id = nil)
     @name = name
