@@ -50,6 +50,12 @@ class Student
     student
   end
   
+  def self.new_from_db(row)
+    student = self.new(row[1], row[2])
+    student.id = row[0]
+    student
+  end
+  
   def update
     sql = <<-SQL
       UPDATE students SET name = ?, grade = ? WHERE id = ?
